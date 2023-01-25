@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+{%block content%}
+<h1>{{title}}</h1>
+<ul>
+    {% for p in posts %}
+    <li>
+        <h2>{{p.title}}</h2>
+        <p>{{p.contentText}}</p>
+        <p>{{p.author}}</p>
+        <p>{{p.date}}</p>
+    </li>
+    {% endfor %}
+</ul>
+{%endblock%}
+</body>
+</html>
